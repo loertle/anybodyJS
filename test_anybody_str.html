@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            testing ANYBODY_STR 0.1.0
+        </title>
+        <meta charset="utf-8">
+        <style>
+            table {
+                /* width:100%; */
+            }
+            table caption{
+                font-weight: bold;
+                font-size: large;
+            }
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            th, td {
+                padding: 5px;
+                text-align: left;
+            }
+            table#t01 tr:nth-child(even) {
+                background-color: #eee;
+            }
+            table#t01 tr:nth-child(odd) {
+               background-color:#fff;
+            }
+            table#t01 th	{
+                background-color: lightblue;
+                color: black;
+            }
+            p {
+                font-size: x-large;
+                font-weight: bold;
+                
+            }
+        </style>
+
+    </head>
+    <body>
+        <p id="top">
+            ANYBODY_STR
+        </p>
+        <a href="#leftlen">
+            leftLen()
+        </a>
+        <br>
+        <a href="#leftstr">
+            leftStr()
+        </a>
+        <br>
+        <a href="#rightlen">
+            rightLen()
+        </a>
+        <br>
+        <a href="#rightstr">
+            rightStr()
+        </a>
+        <br>
+        <a href="#lowercase">
+            lowercase()
+        </a>
+        <br>
+        <a href="#uppercase">
+            uppercase()
+        </a>
+        <table id="t01">
+            <caption id="leftlen">
+                leftLen()
+            </caption>
+            <tr>
+                <th colspan="3">
+                    fp: function parameter | str: string | num: number
+                </th>
+            </tr>        
+            <tr>
+                <th>
+                    fpstrSource
+                </th>
+                <th>
+                    fpnumLength
+                </th>		
+                <th>
+                    leftLen( fpstrSource, fpnumLength )
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    "anybodyJS"
+                </td>
+                <td>
+                    3
+                </td>		
+                <td>
+                    "any"
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    "anybodyJS"
+                </td>
+                <td>
+                    50
+                </td>		
+                <td>
+                    "anybodyJS"
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    "anybodyJS"
+                </td>
+                <td>
+                    0
+                </td>		
+                <td>
+                    ""
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    ""
+                </td>
+                <td>
+                    0
+                </td>		
+                <td>
+                    ""
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    "anybodyJS"
+                </td>
+                <td>
+                    -3
+                </td>		
+                <td>
+                    ""
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    null
+                </td>
+                <td>
+                    undefinded
+                </td>		
+                <td>
+                    ""
+                </td>
+            </tr>
+        </table>
+        <a href="#top">top</a>
+        <br>
+        <table id="t01">
+            <caption id="leftstr">
+                leftStr()
+            </caption>
+            <tr>
+                <th colspan="3">
+                    fp: function parameter | str: string
+                </th>
+            </tr>        
+            <tr>
+                <th>
+                    fpstrSource
+                </th>
+                <th>
+                    fpstrSub
+                </th>		
+                <th>
+                    leftLen( fpstrSource, fpstrSub )
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    "anybodyJS"
+                </td>
+                <td>
+                    "JS"
+                </td>		
+                <td>
+                    "anybody"
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    "anybodyJS"
+                </td>
+                <td>
+                    ""
+                </td>		
+                <td>
+                    ""
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    ""
+                </td>
+                <td>
+                    "any"
+                </td>		
+                <td>
+                    ""
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    "anybodyJS"
+                </td>
+                <td>
+                    Boolean
+                </td>		
+                <td>
+                    ""
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    null
+                </td>
+                <td>
+                    -3
+                </td>		
+                <td>
+                    ""
+                </td>
+            </tr>
+        </table>
+        <a href="#top">top</a>
+        <br>
+        <table id="t01">
+            <caption id="rightlen">
+                rightLen()
+            </caption>
+            <tr>
+                <th colspan="3">
+                    fp: function parameter | str: string | num: number
+                </th>
+            </tr>        
+            <tr>
+                <th>
+                    fpstrSource
+                </th>
+                <th>
+                    fpnumLength
+                </th>		
+                <th>
+                    leftLen( fpstrSource, fpnumLength )
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    "anybodyJS"
+                </td>
+                <td>
+                    2
+                </td>		
+                <td>
+                    "JS"
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    ""
+                </td>
+                <td>
+                    2
+                </td>		
+                <td>
+                    ""
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    ""
+                </td>
+                <td>
+                    -2
+                </td>		
+                <td>
+                    ""
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    "anybodyJS"
+                </td>
+                <td>
+                    Boolean
+                </td>		
+                <td>
+                    ""
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    null
+                </td>
+                <td>
+                    Boolean
+                </td>		
+                <td>
+                    ""
+                </td>
+            </tr>
+        </table>
+        <a href="#top">top</a>
+        <br>
+        <table id="t01">
+            <caption id="rightstr">
+                rightStr()
+            </caption>
+            <tr>
+                <th colspan="3">
+                    fp: function parameter | str: string
+                </th>
+            </tr>        
+            <tr>
+                <th>
+                    fpstrSource
+                </th>
+                <th>
+                    fpstrSub
+                </th>		
+                <th>
+                    leftLen( fpstrSource, fpstrSub )
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    "anybodyJS"
+                </td>
+                <td>
+                    "anybody"
+                </td>		
+                <td>
+                    "JS"
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    "anybodyJS"
+                </td>
+                <td>
+                    ""
+                </td>		
+                <td>
+                    ""
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    ""
+                </td>
+                <td>
+                    "any"
+                </td>		
+                <td>
+                    ""
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    "anybodyJS"
+                </td>
+                <td>
+                    Boolean
+                </td>		
+                <td>
+                    ""
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    null
+                </td>
+                <td>
+                    -3
+                </td>		
+                <td>
+                    ""
+                </td>
+            </tr>
+        </table>
+        <a href="#top">top</a>
+       <br>
+        <table id="t01">
+            <caption id="lowercase">
+                lowercase()
+            </caption>
+            <tr>
+                <th colspan="3">
+                    fp: function parameter | str: string
+                </th>
+            </tr> 
+            <tr>
+                <th>
+                    fpstrSource
+                </th>		
+                <th>
+                    lowercase( fpstrSource )
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    "anybodyJS"
+                </td>
+                <td>
+                    "anybodyjs"
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    ""
+                </td>
+                <td>
+                    ""
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    undefined
+                </td>
+                <td>
+                    ""
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    -3
+                </td>
+                <td>
+                    ""
+                </td>
+            </tr>
+        </table>
+        <a href="#top">top</a>
+        <br>
+        <table id="t01">
+            <caption id="uppercase">
+                uppercase()
+            </caption>
+            <tr>
+                <th colspan="3">
+                    fp: function parameter | str: string
+                </th>
+            </tr> 
+            <tr>
+                <th>
+                    fpstrSource
+                </th>		
+                <th>
+                    uppercase( fpstrSource )
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    "anybodyJS"
+                </td>
+                <td>
+                    "ANYBODYJS"
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    ""
+                </td>
+                <td>
+                    ""
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    undefined
+                </td>
+                <td>
+                    ""
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    -3
+                </td>
+                <td>
+                    ""
+                </td>
+            </tr>
+        </table>
+        <a href="#top">top</a>
+    </body>
+</html>
