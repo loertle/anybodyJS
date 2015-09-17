@@ -9,8 +9,7 @@ With *anybodyJS* you can use functions with function names that understands anyb
   * functions are encapsulated in javascript modules
   * those modules are autonomous and independent from each other
   * one *.js file per module
-* easy usage
-  * just reference the module file in your HTML file with <script src="modulename.js">
+  * no dependency to other libraries like jquery
  
 ### Example
 ```js
