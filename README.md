@@ -24,9 +24,10 @@ var str = modStr.RightStr( "javascript", "java");
 ## Modules
 * Existing
   * String functions:  ANYBODY_STR | anybody_str.js
+  * CSS functions:     ANYBODY_CSS | anybody_css.js
+  * DOM functions:     ANYBODY_DOM | anybody_dom.js
 * Planned
   * Number functions:  ANYBODY_NUM | anybody_num.js
-  * Boolean functions: ANYBODY_BLN | anybody_bln.js
   * Date and Time functions: ANYBODY_DAT | anybody_dat.js
   * other functions: ANYBODY_OTH | anybody_oth.js
   
