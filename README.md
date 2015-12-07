@@ -18,7 +18,7 @@ var modStr = ANYBODY_STR;
 
 // use string function RightStr
 // output: "script"
-var str = modStr.RightStr( "javascript", "java");
+var str = modStr.RightStr("javascript", "java");
 ```
 
 ## Modules
